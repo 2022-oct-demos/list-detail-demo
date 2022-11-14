@@ -7,5 +7,11 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 export async function getAllGames() {
     // get all rows from games
     const response = await client.from('games').select();
+
+    return response.data;
+}
+
+export async function getGame(id){
+    const response = await client.from('games').select().match({id: id}).single();
     return response.data;
 }
