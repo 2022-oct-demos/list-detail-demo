@@ -1,6 +1,7 @@
 /* Imports */
 
 /* Get DOM Elements */
+const gamesContainer = document.querySelector('#games-container');
 
 /* State */
 
