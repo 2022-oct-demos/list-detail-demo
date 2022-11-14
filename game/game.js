@@ -1,12 +1,12 @@
-import { getGame } from "../fetch-utils.js"
-import { renderGameDetail } from "../render-utils.js";
+import { getGame } from '../fetch-utils.js';
+import { renderGameDetail } from '../render-utils.js';
 
 const gameDetailContainer = document.getElementById('game-detail-container');
 
 
 window.addEventListener('load', async () => {
     const params = new URLSearchParams(window.location.search);
-    console.log(window.location.search, ".search");
+    console.log(window.location.search, '.search');
     const id = params.get('id');
 
     console.log(id);
@@ -15,4 +15,4 @@ window.addEventListener('load', async () => {
 
     const gameDetailEl = renderGameDetail(game);
     gameDetailContainer.append(gameDetailEl);
-})
+});
