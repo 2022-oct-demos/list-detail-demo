@@ -9,14 +9,14 @@ export function renderCard(booger) {
 
     const imgEl = document.createElement('img');
     imgEl.src = booger.img;
+    imgEl.alt = `${booger.name} game`;
 
     gameEl.append(nameEl, imgEl);
 
     return gameEl;
-
 }
 
-export function renderGameDetail(gameObject){
+export function renderGameDetail(gameObject) {
     const div = document.createElement('div');
     const nameEl = document.createElement('p');
     const imgEl = document.createElement('img');
@@ -25,6 +25,7 @@ export function renderGameDetail(gameObject){
 
     nameEl.textContent = gameObject.name;
     imgEl.src = gameObject.img;
+    imgEl.alt = gameObject.name + ' game';
     yearEl.textContent = gameObject.year_created;
     typeEl.textContent = gameObject.type;
 
