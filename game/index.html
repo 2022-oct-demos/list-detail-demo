@@ -14,15 +14,15 @@
     <!-- js -->
     <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
     ></script>
-    <script type="module" src="app.js"></script>
+    <script type="module" src="game.js"></script>
 
     <!-- fonts -->
     <!-- see https://fonts.google.com/ -->
 
     <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/item.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/item.css" />
     <!-- add link for page specific css -->
 
 </head>
@@ -30,11 +30,13 @@
 <body>
     <header>
         <h1>Games List-Detail Demo</h1>
+        <a href="../">Home</a>
     </header>
 
     <main>
-        <div id="games-container"></div>
-        <p class="game-name"> Rummikub </p>
+        <section>
+            <div id="game-detail-container"></div>
+        </section>
     </main>
 </body>
 
